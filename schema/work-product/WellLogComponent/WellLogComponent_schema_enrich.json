@@ -1,0 +1,480 @@
+{
+  "kind": "opendes:osdu:welllog-wpc:0.2.1",
+	"schema": [
+		{
+			"path": "ResourceTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "UWI",
+			"kind": "integer",
+			"ext": {}
+		},
+		{
+			"path": "UWBI",
+			"kind": "integer",
+			"ext": {}
+		},
+		{
+			"path": "Curves.Mnemonic",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Curves.Data",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceHomeRegionID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceHostRegionIDs",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceObjectCreationDateTime",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceCurationStatus",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceLifecycleStatus",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "ResourceSecurityClassification",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.GroupTypeProperties.Files",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Data.GroupTypeProperties.Artefacts.RoleID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.GroupTypeProperties.Artefacts.ResourceTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.GroupTypeProperties.Artefacts.ResourceID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Name",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Description",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.CreationDateTime",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Tags",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.SpatialLocationCoordinatesDate",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.QuantitativeAccuracyBandID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.QualitativeSpatialAccuracyTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckPerformedBy",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckDateTime",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckRemark",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.Coordinates.x",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.Coordinates.y",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.SpatialParameterTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.SpatialGeometryTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.VerticalCRSID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.HorizontalCRSID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.Elevation",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.HeightAboveGroundLevel",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialPoint.HeightAboveGroundLevelUOMID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.SpatialLocationCoordinatesDate",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.QuantitativeAccuracyBandID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.QualitativeSpatialAccuracyTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckPerformedBy",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckDateTime",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckRemark",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.Coordinates.x",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.Coordinates.y",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.SpatialParameterTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.SpatialGeometryTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.VerticalCRSID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.HorizontalCRSID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.Elevation",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.HeightAboveGroundLevel",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SpatialArea.HeightAboveGroundLevelUOMID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.SubmitterName",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.BusinessActivites",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LineageAssertions.ID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LineageAssertions.RelationshipType",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Annotations",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.AuthorIDs",
+			"kind": "[]string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.WellboreID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.WellLogTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.TopMeasuredDepth.Depth",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.TopMeasuredDepth.UnitOfMeasure",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.BottomMeasuredDepth.Depth",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.BottomMeasuredDepth.UnitOfMeasure",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.ServiceCompanyID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LogSource",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LogActivity",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LogRun",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LogVersion",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LoggingService.LogServiceDateInterval.StartDate",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LoggingService.LogServiceDateInterval.EndDate",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.ToolStringDescription",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.LoggingDirection",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.PassNumber",
+			"kind": "integer",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.ActivityType",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.DrillingFluidProperty",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.HoleTypeLogging",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.CurveID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.DateStamp",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.CurveVersion",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.CurveQuality",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.InterpreterName",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.IsProcessed",
+			"kind": "boolean",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.NullValue",
+			"kind": "boolean",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.DepthCoding",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.Interpolate",
+			"kind": "boolean",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.TopDepth",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.BaseDepth",
+			"kind": "double",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.DepthUnit",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.CurveUnit",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.Mnemonic",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.LogCurveTypeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.LogCurveBusinessValueID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.LogCurveMainFamilyID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "Data.IndividualTypeProperties.Curves.LogCurveFamilyID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "AssociativeID",
+			"kind": "string",
+			"ext": {}
+		},
+		{
+			"path": "FileAssociativeIDs",
+			"kind": "[]string",
+			"ext": {}
+		}
+	]
+}

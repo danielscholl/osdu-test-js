@@ -1,0 +1,261 @@
+{
+  "kind": "opendes:osdu:wellboremarker-wp:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.Components",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.Name",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.Description",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.CreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.Tags",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.SpatialLocationCoordinatesDate",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.QuantitativeAccuracyBandID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.QualitativeSpatialAccuracyTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckPerformedBy",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.CoordinateQualityCheckRemark",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.Coordinates.x",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.Coordinates.y",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.SpatialParameterTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.SpatialGeometryTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.VerticalCRSID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.HorizontalCRSID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.Elevation",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.HeightAboveGroundLevel",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialPoint.HeightAboveGroundLevelUOMID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.SpatialLocationCoordinatesDate",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.QuantitativeAccuracyBandID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.QualitativeSpatialAccuracyTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckPerformedBy",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.CoordinateQualityCheckRemark",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.Coordinates.x",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.Coordinates.y",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.SpatialParameterTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.SpatialGeometryTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.VerticalCRSID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.HorizontalCRSID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.Elevation",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.HeightAboveGroundLevel",
+      "kind": "double",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialArea.HeightAboveGroundLevelUOMID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SubmitterName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.BusinessActivites",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.AuthorIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.LineageAssertions.ID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.LineageAssertions.RelationshipType",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.Annotations",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ComponentsAssociativeIDs",
+      "kind": "[]string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

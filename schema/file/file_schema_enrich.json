@@ -1,0 +1,86 @@
+{
+  "kind": "opendes:osdu:file:0.2.1",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.SchemaFormatTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.PreLoadFilePath",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.FileSource",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.FileSize",
+      "kind": "int",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.EncodingFormatTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.GroupTypeProperties.Checksum",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "AssociativeID",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

@@ -1,0 +1,6 @@
+export TENANT_ID=""
+export PRINCIPAL_ID=""
+export PRINCIPAL_SECRET=""
+export CLIENT_ID=""
+export CLIENT_SECRET=""
+export OSDU_BASE="ado-qa-6ds6f-6ds6ff8e-au"

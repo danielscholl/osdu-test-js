@@ -1,0 +1,4 @@
+{
+  "kind": "opendes:osdu:well:*",
+  "query": "data.Data.IndividualTypeProperties.FacilityName: \"ACA*\""
+}
