@@ -9,12 +9,14 @@
     "test:legal": "mocha test/legal.spec.js",
     "test:schema": "mocha test/schema.spec.js",
     "test:search": "mocha test/search.spec.js",
+    "test:search:custom": "mocha test/search_custom.spec.js",
     "test:service": "mocha test/service.spec.js"
   },
   "author": "Microsoft",
   "license": "APACHE",
   "dependencies": {
     "chai": "^4.2.0",
+    "json-stringify-pretty-compact": "^2.0.0",
     "mocha": "^7.1.1",
     "supertest": "^4.0.2"
   },

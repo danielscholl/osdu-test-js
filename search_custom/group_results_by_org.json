@@ -1,5 +1,0 @@
-{
-  "kind": "opendes:osdu:*:0.2.0",
-  "query": "*",
-  "aggregateBy": "Data.IndividualTypeProperties.DataSourceOrganisationID"
-}

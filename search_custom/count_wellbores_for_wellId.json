@@ -1,5 +1,0 @@
-{
-  "kind": "opendes:osdu:*:0.2.0",
-  "query": "data.Data.IndividualTypeProperties.WellID:\"srn:master-data/Well:3687:\"",
-  "limit": 1
-}
