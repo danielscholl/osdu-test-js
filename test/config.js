@@ -11,6 +11,11 @@ module.exports = {
     client_secret: process.env.PRINCIPAL_SECRET,
     resource: process.env.CLIENT_ID
   },
+  fileDir: {
+    schema: process.env.SCHEMA_FOLDER || '../schema',
+    legal: process.env.LEGAL_FOLDER || '../legal',
+    search: process.env.SEARCH_FOLDER || '../search'
+  },
   expectedCount: {
     file: 12777,
     well: 4947,

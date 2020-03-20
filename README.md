@@ -25,11 +25,13 @@ npm run test:legal
 npm run test:schema
 npm run test:search
 npm run test:service
+
+## Debug Individual Test
+SEARCH_FOLDER="../search_fail" LOG_LEVEL=debug npm run test:search
 ```
 
 ## TODO
 
 - Add Additional Search Tests
-- Refactor Legal Tests to loop a directory of legaltag files
-- Refactor Schemas Tests to loop a directory of schema files
+
 - Add Docker support to reduce requirements purely to Docker

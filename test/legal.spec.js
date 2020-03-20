@@ -5,12 +5,11 @@ const fs = require("fs")
 const should = require('chai').Should();
 const request = require("supertest");
 const config = require('./config');
-const dataDir = "../legal"
 
 let oAuth = request(config.auth_host + '/oauth2');
 let apiHost = request(config.legal_host);
 
-const directoryPath = path.join(__dirname, dataDir);
+const directoryPath = path.join(__dirname, config.fileDir.legal);
 const partition = 'opendes';
 let token = null;
 
@@ -19,6 +18,7 @@ fs.readdir(directoryPath, (err, files) => {
     console.log("Error getting directory information.")
   } else {
     files.forEach(file => {
+      let data = null;
 
       before((done) => {
         // Get a new OAuth Token
@@ -31,9 +31,8 @@ fs.readdir(directoryPath, (err, files) => {
           });
       });
 
-      describe("LegalTag Validation Check: " + file, (done) => {
-        const item = require(dataDir + '/' + file);
-        let data = null;
+      describe("LegalTag Validation Check: " + file, () => {
+        const item = require(config.fileDir.legal + '/' + file);
 
         it('is retrieved by name', (done) => {
           apiHost.get('/legaltags/' + item.name)
@@ -49,6 +48,13 @@ fs.readdir(directoryPath, (err, files) => {
         });
 
         it('should be the correct item', () => data.should.be.deep.equal(item));
+      });
+
+      after((done) => {
+        if (process.env.LOG_LEVEL === 'debug') {
+          console.log(data);
+        }
+        done();
       });
     });
   }

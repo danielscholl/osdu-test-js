@@ -1,0 +1,4 @@
+{
+  "kind": "opendes:osdu:*:0.2.0",
+  "query": "data.Data.IndividualTypeProperties.TopMeasuredDepth.Depth:[2000 TO 3000]"
+}

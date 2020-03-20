@@ -1,0 +1,4 @@
+{
+  "kind": "opendes:osdu:*:0.2.0",
+  "query": "data.ResourceID:(\"srn:master-data/Well:8690:\" OR \"srn:master-data/Well:1000:\")"
+}

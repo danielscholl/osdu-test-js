@@ -5,12 +5,11 @@ const fs = require("fs")
 const should = require('chai').Should();
 const request = require("supertest");
 const config = require('./config');
-const dataDir = "../schema"
 
 let oAuth = request(config.auth_host + '/oauth2');
 let apiHost = request(config.storage_host);
 
-const directoryPath = path.join(__dirname, dataDir);
+const directoryPath = path.join(__dirname, config.fileDir.schema);
 const partition = 'opendes';
 let token = null;
 
@@ -19,6 +18,7 @@ fs.readdir(directoryPath, (err, files) => {
     console.log("Error getting directory information.")
   } else {
     files.forEach(file => {
+      let data = null;
 
       before((done) => {
         // Get a new OAuth Token
@@ -31,9 +31,8 @@ fs.readdir(directoryPath, (err, files) => {
           });
       });
 
-      describe("Schema Validation Check: " + file, (done) => {
-        const schema = require(dataDir + '/' + file);
-        let data = null;
+      describe("Schema Validation Check: " + file, () => {
+        const schema = require(config.fileDir.schema + '/' + file);
 
         it('schema is retrieved by kind', (done) => {
           apiHost.get('/schemas/' + schema.kind)
@@ -49,6 +48,13 @@ fs.readdir(directoryPath, (err, files) => {
         });
 
         it('should be the correct schema', () => data.should.be.deep.equal(schema));
+      });
+
+      after((done) => {
+        if (process.env.LOG_LEVEL === 'debug') {
+          console.log(data);
+        }
+        done();
       });
     });
   }

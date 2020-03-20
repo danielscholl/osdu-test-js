@@ -1,0 +1,4 @@
+{
+  "kind": "opendes:osdu:*:0.2.0",
+  "query": "(data.Data.IndividualTypeProperties.WellboreID: \"srn:master-data/Wellbore:3687:\") AND (data.ResourceTypeID: (\"srn:type:work-product-component/WellboreTrajectory:\" OR \"srn:type:work-product-component/WellboreMarker:\"))"
+}
