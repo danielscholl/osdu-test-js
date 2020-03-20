@@ -338,7 +338,7 @@
     },
     {
       "path": "Data.IndividualTypeProperties.PassNumber",
-      "kind": "integer",
+      "kind": "int",
       "ext": {}
     },
     {
@@ -456,5 +456,6 @@
       "kind": "[]string",
       "ext": {}
     }
-  ]
+  ],
+  "ext": null
 }

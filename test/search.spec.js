@@ -2,23 +2,23 @@
 
 const path = require("path")
 const fs = require("fs")
-const directoryPath = path.join(__dirname, "../search");
-
 const should = require('chai').Should();
 const request = require("supertest");
 const config = require('./config');
+const dataDir = "../search"
 
 let oAuth = request(config.auth_host + '/oauth2');
 let apiHost = request(config.search_host);
 
+const directoryPath = path.join(__dirname, dataDir);
 const partition = 'opendes';
 let token = null;
 
-fs.readdir(directoryPath, function (err, files) {
+fs.readdir(directoryPath, (err, files) => {
   if (err) {
     console.log("Error getting directory information.")
   } else {
-    files.forEach(function (file) {
+    files.forEach(file => {
 
       before((done) => {
         // Get a new OAuth Token
@@ -33,7 +33,7 @@ fs.readdir(directoryPath, function (err, files) {
 
       describe("Search Validation Check: " + file, (done) => {
         let data = null;
-        const params = require('../search/' + file);
+        const params = require(dataDir + '/' + file);
 
         it("query: " + params.query, (done) => {
           apiHost.post('/api/search/v2/query')
