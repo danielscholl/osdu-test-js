@@ -25,9 +25,6 @@ npm run test:search
 npm run test:search:custom
 SEARCH_FOLDER="../search_enrich" npm run test:search
 
-# Execute All Tests
-npm test
-
 ## Debug Alternate Folder Tests
 SEARCH_FOLDER="../search_fail" LOG_LEVEL=debug npm run test:search
 ```
