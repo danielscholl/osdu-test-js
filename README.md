@@ -19,14 +19,14 @@ git clone https://github.com/danielscholl/osdu-test-js.git
 # Execute Individual Tests
 npm run test:service
 npm run test:count
-npm run test:legal
-npm run test:schema
-npm run test:search
-npm run test:search:custom
-SEARCH_FOLDER="../search_enrich" npm run test:search
+FOLDER="../legal" npm run test:legal
+FOLDER="../schema" npm run test:schema
+FOLDER="../search" npm run test:search
+VERSION="0.2.0" npm run test:search:custom
+
 
 ## Debug Alternate Folder Tests
-SEARCH_FOLDER="../search_fail" LOG_LEVEL=debug npm run test:search
+FOLDER="../search_fail" LOG_LEVEL=debug npm run test:search
 ```
 
 ## TODO

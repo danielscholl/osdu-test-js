@@ -12,9 +12,9 @@ module.exports = {
     resource: process.env.CLIENT_ID
   },
   fileDir: {
-    schema: process.env.SCHEMA_FOLDER || '../schema',
-    legal: process.env.LEGAL_FOLDER || '../legal',
-    search: process.env.SEARCH_FOLDER || '../search'
+    schema: process.env.FOLDER || '../schema',
+    legal: process.env.FOLDER || '../legal',
+    search: process.env.FOLDER || '../search'
   },
   expectedCount: {
     file: 12777,

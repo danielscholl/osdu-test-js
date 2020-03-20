@@ -8,6 +8,7 @@ const stringify = require("json-stringify-pretty-compact");
 describe('Custom Search Validations', () => {
   let oAuth = request(config.auth_host + '/oauth2');
   let apiHost = request(config.search_host);
+  let schemaVersion = process.env.VERSION || '0.2.0'
   const partition = 'opendes';
   let token = null;
 
@@ -22,115 +23,115 @@ describe('Custom Search Validations', () => {
       });
   });
 
-  // describe('Count Wellbores for WellId', () => {
+  describe('Count Wellbores for WellId', () => {
 
-  //   let data = null;
-  //   let params = {
-  //     kind: "opendes:osdu:*:0.2.0",
-  //     query: "data.Data.IndividualTypeProperties.WellID:\"srn:master-data/Well:3687:\"",
-  //     limit: 1
-  //   }
+    let data = null;
+    let params = {
+      kind: "opendes:osdu:*:" + schemaVersion,
+      query: "data.Data.IndividualTypeProperties.WellID:\"srn:master-data/Well:3687:\"",
+      limit: 1
+    }
 
-  //   it('item is searched for', (done) => {
-  //     apiHost.post('/api/search/v2/query')
-  //       .set('Authorization', token)
-  //       .set('data-partition-id', partition)
-  //       .send(params)
-  //       .expect(200)
-  //       .then((res) => {
-  //         res.body.should.be.an('object');
-  //         data = res.body;
-  //         done();
-  //       });
-  //   });
+    it('item is searched for', (done) => {
+      apiHost.post('/api/search/v2/query')
+        .set('Authorization', token)
+        .set('data-partition-id', partition)
+        .send(params)
+        .expect(200)
+        .then((res) => {
+          res.body.should.be.an('object');
+          data = res.body;
+          done();
+        });
+    });
 
-  //   it('should limit to 1 item', () => data.results.length.should.be.equal(1));
+    it('should limit to 1 item', () => data.results.length.should.be.equal(1));
 
-  //   after((done) => {
-  //     if (process.env.LOG_LEVEL === 'debug') {
-  //       console.log(stringify(data));
-  //     }
-  //     done();
-  //   });
-  // });
+    after((done) => {
+      if (process.env.LOG_LEVEL === 'debug') {
+        console.log(stringify(data));
+      }
+      done();
+    });
+  });
 
-  // describe('Limit Returned Fields', () => {
+  describe('Limit Returned Fields', () => {
 
-  //   let data = null;
-  //   let params = {
-  //     kind: "opendes:osdu:*:0.2.0",
-  //     query: "data.ResourceTypeID: \"srn:type:work-product-component/WellLog:\"",
-  //     returnedFields: [
-  //       "data.ResourceID",
-  //       "data.Data.IndividualTypeProperties.Name"
-  //     ],
-  //     limit: 1
-  //   }
+    let data = null;
+    let params = {
+      kind: "opendes:osdu:*:" + schemaVersion,
+      query: "data.ResourceTypeID: \"srn:type:work-product-component/WellLog:\"",
+      returnedFields: [
+        "data.ResourceID",
+        "data.Data.IndividualTypeProperties.Name"
+      ],
+      limit: 1
+    }
 
-  //   it('item is searched for', (done) => {
-  //     apiHost.post('/api/search/v2/query')
-  //       .set('Authorization', token)
-  //       .set('data-partition-id', partition)
-  //       .send(params)
-  //       .expect(200)
-  //       .then((res) => {
-  //         res.body.should.be.an('object');
-  //         data = res.body;
-  //         done();
-  //       });
-  //   });
+    it('item is searched for', (done) => {
+      apiHost.post('/api/search/v2/query')
+        .set('Authorization', token)
+        .set('data-partition-id', partition)
+        .send(params)
+        .expect(200)
+        .then((res) => {
+          res.body.should.be.an('object');
+          data = res.body;
+          done();
+        });
+    });
 
-  //   it('should return only 2 fields', () => Object.keys(data.results[0].data).length.should.be.equal(2));
-  //   it('should return data.ResourceId', () => data.results[0].data.ResourceID.should.exist)
-  //   it('should return data.Data.ResourceTypeID', () => data.results[0].data.ResourceID.should.exist)
+    it('should return only 2 fields', () => Object.keys(data.results[0].data).length.should.be.equal(2));
+    it('should return data.ResourceId', () => data.results[0].data.ResourceID.should.exist)
+    it('should return data.Data.ResourceTypeID', () => data.results[0].data.ResourceID.should.exist)
 
-  //   after((done) => {
-  //     if (process.env.LOG_LEVEL === 'debug') {
-  //       console.log(stringify(data));
-  //     }
-  //     done();
-  //   });
-  // });
+    after((done) => {
+      if (process.env.LOG_LEVEL === 'debug') {
+        console.log(stringify(data));
+      }
+      done();
+    });
+  });
 
-  // describe('Group Results by Org', () => {
+  describe('Group Results by Org', () => {
 
-  //   let data = null;
-  //   let params = {
-  //     kind: "opendes:osdu:*:0.2.0",
-  //     query: "*",
-  //     aggregateBy: "Data.IndividualTypeProperties.DataSourceOrganisationID",
-  //     limit: 2
-  //   }
+    let data = null;
+    let params = {
+      kind: "opendes:osdu:*:" + schemaVersion,
+      query: "*",
+      aggregateBy: "Data.IndividualTypeProperties.DataSourceOrganisationID",
+      limit: 2
+    }
 
-  //   it('item is searched for', (done) => {
-  //     apiHost.post('/api/search/v2/query')
-  //       .set('Authorization', token)
-  //       .set('data-partition-id', partition)
-  //       .send(params)
-  //       .expect(200)
-  //       .then((res) => {
-  //         res.body.should.be.an('object');
-  //         data = res.body;
-  //         done();
-  //       });
-  //   });
+    it('item is searched for', (done) => {
+      apiHost.post('/api/search/v2/query')
+        .set('Authorization', token)
+        .set('data-partition-id', partition)
+        .send(params)
+        .expect(200)
+        .then((res) => {
+          res.body.should.be.an('object');
+          data = res.body;
+          done();
+        });
+    });
 
-  //   it('should limit to 2 items', () => data.results.length.should.be.equal(2));
-  //   it('should have aggragations', () => data.aggregations.length.should.be.gt(0));
+    it('should limit to 2 items', () => data.results.length.should.be.equal(2));
+    it('should have aggragations', () => data.aggregations.length.should.be.gt(0));
 
-  //   after((done) => {
-  //     if (process.env.LOG_LEVEL === 'debug') {
-  //       console.log(stringify(data));
-  //     }
-  //     done();
-  //   });
-  // });
+    after((done) => {
+      if (process.env.LOG_LEVEL === 'debug') {
+        console.log(stringify(data));
+      }
+      done();
+    });
+  });
 
   describe('Wellbore Page 1', () => {
 
     let data = null;
     let params = {
-      kind: "opendes:osdu:*:0.2.0",
+      kind: "opendes:osdu:*:" + schemaVersion,
       query: "data.Data.IndividualTypeProperties.WellID:\"srn:master-data/Well:3687:\"",
       offset: 0,
       limit: 1,
@@ -171,7 +172,7 @@ describe('Custom Search Validations', () => {
 
     let data = null;
     let params = {
-      kind: "opendes:osdu:*:0.2.0",
+      kind: "opendes:osdu:*:" + schemaVersion,
       query: "data.Data.IndividualTypeProperties.WellID:\"srn:master-data/Well:3687:\"",
       offset: 1,
       limit: 2,
