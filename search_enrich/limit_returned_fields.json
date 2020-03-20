@@ -1,0 +1,8 @@
+{
+  "kind": "opendes:osdu:*:0.2.1",
+  "query": "data.ResourceTypeID: \"srn:type:work-product-component/WellLog:\"",
+  "returnedFields": [
+    "data.ResourceID",
+    "data.Data.IndividualTypeProperties.Name"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "kind": "opendes:osdu:*:0.2.1",
+  "query": "(data.ResourceID:(\"srn:master-data/Well:8690:\" OR \"srn:master-data/Well:1000:\")) AND (data.Data.IndividualTypeProperties.CountryID: \"srn:master-data/GeopoliticalEntity:Netherlands:\")"
+}

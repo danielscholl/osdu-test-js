@@ -23,6 +23,7 @@ npm run test:legal
 npm run test:schema
 npm run test:search
 npm run test:search:custom
+SEARCH_FOLDER="../search_enrich" npm run test:search
 
 # Execute All Tests
 npm test
