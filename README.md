@@ -14,7 +14,7 @@ This is a Test Harness for testing an OSDU Azure Environment Default Data Load
 
 ```bash
 # Clone the Repository
-git clone
+git clone https://github.com/danielscholl/osdu-test-js.git
 
 # Execute All Tests
 npm test
