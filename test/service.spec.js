@@ -31,21 +31,21 @@ describe('Service Validation Checks', () => {
 
   describe('Service Authentication', () => {
 
-    it('Legal Service returns 403 when expired token', (done) => {
+    it('Legal Service returns 403 with expired token', (done) => {
       request(config.legal_host).get('/legaltags/dummy')
         .set('Accept', 'application/json')
         .set('Authorization', invalidToken)
         .expect(403, done);
     });
 
-    it('Storage Service returns 403 when expired token', (done) => {
+    it('Storage Service returns 403 with expired token', (done) => {
       request(config.storage_host).get('/schemas/dummy')
         .set('Accept', 'application/json')
         .set('Authorization', invalidToken)
         .expect(403, done);
     });
 
-    it('Search Service returns 403 when expired token', (done) => {
+    it('Search Service returns 403 with expired token', (done) => {
       request(config.search_host).get('/api/search/v2/query')
         .set('Accept', 'application/json')
         .set('Authorization', invalidToken)
