@@ -2,12 +2,12 @@
 
 const should = require('chai').Should();
 const request = require("supertest");
-const config = require('./config');
+const config = require('../config');
 const stringify = require("json-stringify-pretty-compact");
 
 describe('Custom Search Validations', () => {
-  let oAuth = request(config.auth_host + '/oauth2');
-  let apiHost = request(config.search_host);
+  let oAuth = request(config.api_host.auth + '/oauth2');
+  let apiHost = request(config.api_host.search);
   let schemaVersion = process.env.VERSION || '0.2.0'
   const partition = 'opendes';
   let token = null;

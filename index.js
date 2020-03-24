@@ -1,22 +1,17 @@
 const replaceStorageCollections = require('./lib/facade/cosmosdb').replaceStorageCollections;
-const deleteAllIndices = require('./lib/facade/elasticsearch').deleteAllIndices;
+const deleteAllIndices = require('./lib/facade/elasticsearch');
 const deleteAllMetadataBlobs = require('./lib/facade/blob').deleteAllMetadataBlobs;
 
 const myArgs = process.argv.slice(2);
 
-async function done(a) {
-  console.log('we seem to be finished', a);
-}
-
-async function work() {
-  await deleteAllMetadataBlobs()
+async function done() {
+  console.log('we seem to be finished');
 }
 
 if (myArgs[0] === 'reset') {
-  // deleteAllMetadataBlobs()
+  deleteAllMetadataBlobs();
   replaceStorageCollections()
-  //   .then(deleteAllIndices)
-  //   .then(deleteAllMetadataBlobs)
+    .then(deleteAllIndices)
     .then(done)
     .catch(console.error);
 } else {

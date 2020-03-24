@@ -4,10 +4,10 @@ const path = require("path")
 const fs = require("fs")
 const should = require('chai').Should();
 const request = require("supertest");
-const config = require('./config');
+const config = require('../config');
 
-let oAuth = request(config.auth_host + '/oauth2');
-let apiHost = request(config.legal_host);
+let oAuth = request(config.api_host.auth + '/oauth2');
+let apiHost = request(config.api_host.legal);
 
 const directoryPath = path.join(__dirname, config.fileDir.legal);
 const partition = 'opendes';

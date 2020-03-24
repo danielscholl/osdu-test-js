@@ -2,11 +2,11 @@
 
 const should = require('chai').Should();
 const request = require("supertest");
-const config = require('./config');
+const config = require('../config');
 
 describe('Count by Kind Validation Checks', () => {
-  let oAuth = request(config.auth_host + '/oauth2');
-  let apiHost = request(config.search_host);
+  let oAuth = request(config.api_host.auth + '/oauth2');
+  let apiHost = request(config.api_host.search);
   const partition = 'opendes';
   let token = null;
 

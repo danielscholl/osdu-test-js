@@ -11,6 +11,17 @@ This is a Test Harness for testing an OSDU Azure Environment Default Data Load
 
 ### Instructions
 
+#### Clone the Repository
+
+#### Setup the Environment (.env)
+
+```
+
+# Login to the CLI
+az login --tenant $ARM_TENANT_ID --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET
+az keyvault secret show --vault-name ado-prod-jnw-jnwijvfg-kv --name elastic-endpoint --query value -otsv
+```
+
 
 ```bash
 # Clone the Repository
