@@ -3,10 +3,10 @@ require("dotenv").config();
 
 module.exports = {
   api_host: {
-    auth: 'https://login.microsoftonline.com/' + process.env.TENANT_ID,
-    legal: 'https://' + process.env.OSDU_BASE + '-legal.azurewebsites.net',
-    storage: 'https://' + process.env.OSDU_BASE + '-storage.azurewebsites.net',
-    search: 'https://' + process.env.OSDU_BASE + '-search.azurewebsites.net',
+    auth: `https://login.microsoftonline.com/${process.env.TENANT_ID}`,
+    legal: `https://${process.env.OSDU_BASE}-legal.azurewebsites.net`,
+    storage: `https://${process.env.OSDU_BASE}-storage.azurewebsites.net`,
+    search: `https://${process.env.OSDU_BASE}-search.azurewebsites.net`,
   },
   auth_params: {
     grant_type: 'client_credentials',
