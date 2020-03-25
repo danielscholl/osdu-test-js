@@ -4,8 +4,8 @@ let dataLoad = new DataLoad();
 
 if (myArgs[0] === 'reset') {
   dataLoad.resetCollections()
-    .then(dataLoad.resetStorage())
-    .then(dataLoad.resetIndices())
+    .then(dataLoad.resetIndices)
+    .then(dataLoad.resetStorage)
     .then(() => console.log('we seem to be finished'))
     .catch(console.error);
 } else {
