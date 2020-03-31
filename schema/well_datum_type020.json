@@ -1,0 +1,101 @@
+{
+  "kind": "opendes:osdu:well_datum_type:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.InactiveIndicator",
+      "kind": "boolean",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeDescription",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeNameAlias.AliasName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeNameAlias.AliasNameTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeNameAlias.DefinitionOrganisationID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeNameAlias.EffectiveDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.WellDatumTypeNameAlias.TerminationDateTime",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

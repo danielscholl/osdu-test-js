@@ -22,7 +22,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('file counts', (done) => {
-    const schema = require('../schema/file_schema.json');
+    const schema = require('../schema/file020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -48,7 +48,7 @@ describe('Count by Kind Validation Checks', () => {
 
 
   describe('well-master counts', (done) => {
-    const schema = require('../schema/well_schema.json');
+    const schema = require('../schema/well020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -73,7 +73,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('wellbore-master counts', (done) => {
-    const schema = require('../schema/wellbore_schema.json');
+    const schema = require('../schema/wellbore020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -98,7 +98,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('wellboremarker-wp counts', (done) => {
-    const schema = require('../schema/WellboreMarker_schema.json');
+    const schema = require('../schema/WellboreMarker020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -123,7 +123,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('wellboremarker-wpc counts', (done) => {
-    const schema = require('../schema/WellboreMarkerComponent_schema.json');
+    const schema = require('../schema/WellboreMarkerComponent020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -148,7 +148,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('wellboretrajectory-wp counts', (done) => {
-    const schema = require('../schema/WellboreTrajectory_schema.json');
+    const schema = require('../schema/WellboreTrajectory020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -173,7 +173,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('wellboretrajectory-wpc counts', (done) => {
-    const schema = require('../schema/WellboreTrajectoryComponent_schema.json');
+    const schema = require('../schema/WellboreTrajectoryComponent020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -198,7 +198,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('welllog-wp counts', (done) => {
-    const schema = require('../schema/WellLog_schema.json');
+    const schema = require('../schema/WellLog020.json');
     let data = null;
     let params = {
       kind: schema.kind,
@@ -223,7 +223,7 @@ describe('Count by Kind Validation Checks', () => {
   });
 
   describe('welllog-wpc counts', (done) => {
-    const schema = require('../schema/WellLogComponent_schema.json');
+    const schema = require('../schema/WellLogComponent020.json');
     let data = null;
     let params = {
       kind: schema.kind,

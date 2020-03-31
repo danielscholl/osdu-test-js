@@ -20,13 +20,13 @@ module.exports = {
     search: process.env.FOLDER || '../search'
   },
   expectedCount: {
-    file: 12777,
-    well: 4947,
-    wellbore: 6485,
-    wellboremarker: 5904,
-    wellboremarkerwpc: 5904,
-    wellboretrajectory: 5944,
-    wellboretrajectorywpc: 5944,
+    file: 12757,
+    well: 4897,
+    wellbore: 6482,
+    wellboremarker: 5888,
+    wellboremarkerwpc: 5886,
+    wellboretrajectory: 5943,
+    wellboretrajectorywpc: 5943,
     welllog: 929,
     welllogwpc: 929
   },

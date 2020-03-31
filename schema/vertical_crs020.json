@@ -1,0 +1,101 @@
+{
+  "kind": "opendes:osdu:vertical_crs:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.InactiveIndicator",
+      "kind": "boolean",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSDescription",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSNameAlias.AliasName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSNameAlias.AliasNameTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSNameAlias.DefinitionOrganisationID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSNameAlias.EffectiveDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.VerticalCRSNameAlias.TerminationDateTime",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

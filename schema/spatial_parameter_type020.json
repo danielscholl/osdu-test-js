@@ -1,0 +1,101 @@
+{
+  "kind": "opendes:osdu:spatial_parameter_type:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.InactiveIndicator",
+      "kind": "boolean",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeDescription",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeNameAlias.AliasName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeNameAlias.AliasNameTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeNameAlias.DefinitionOrganisationID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeNameAlias.EffectiveDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialParameterTypeNameAlias.TerminationDateTime",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

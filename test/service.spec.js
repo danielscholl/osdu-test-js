@@ -45,11 +45,11 @@ describe('Service Validation Checks', () => {
         .expect(403, done);
     });
 
-    it('Search Service returns 403 with expired token', (done) => {
+    it('Search Service returns 500 with expired token', (done) => {
       request(config.api_host.search).get('/api/search/v2/query')
         .set('Accept', 'application/json')
         .set('Authorization', invalidToken)
-        .expect(403, done);
+        .expect(500, done);
     });
   });
 });

@@ -1,0 +1,121 @@
+{
+  "kind": "opendes:osdu:unit_of_measure:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.InactiveIndicator",
+      "kind": "boolean",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureDescription",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureNameAlias.AliasName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureNameAlias.AliasNameTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureNameAlias.DefinitionOrganisationID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureNameAlias.EffectiveDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureNameAlias.TerminationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.QuantityTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureSymbolCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureType",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.UnitOfMeasureSourceReferenceID",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}

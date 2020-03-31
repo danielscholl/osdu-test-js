@@ -1,0 +1,101 @@
+{
+  "kind": "opendes:osdu:spatial_geometry_type:0.2.0",
+  "schema": [
+    {
+      "path": "ResourceTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHomeRegionID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceHostRegionIDs",
+      "kind": "[]string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceObjectCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceVersionCreationDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceCurationStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceLifecycleStatus",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "ResourceSecurityClassification",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.InactiveIndicator",
+      "kind": "boolean",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeDescription",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeCode",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeNameAlias.AliasName",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeNameAlias.AliasNameTypeID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeNameAlias.DefinitionOrganisationID",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeNameAlias.EffectiveDateTime",
+      "kind": "string",
+      "ext": {}
+    },
+    {
+      "path": "Data.IndividualTypeProperties.SpatialGeometryTypeNameAlias.TerminationDateTime",
+      "kind": "string",
+      "ext": {}
+    }
+  ],
+  "ext": null
+}
