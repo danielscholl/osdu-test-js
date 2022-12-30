@@ -23,7 +23,7 @@
     "documentdb": "^1.15.3",
     "dotenv": "^8.2.0",
     "json-stringify-pretty-compact": "^2.0.0",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "supertest": "^4.0.2"
   },
   "mocha": {
